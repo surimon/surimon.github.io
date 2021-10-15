@@ -1,0 +1,159 @@
+/* 	
+	Name:		Suri Lee
+	Date:		10-10-2021
+	Project:	Prducts or Services page
+	File:		styles.css
+*/
+
+body {
+	color:rgb(91, 91, 91);
+	background-color: white;
+	margin: 50px 200px 50px 200px;
+}
+
+h1 {
+	font-size: 15px;
+	width: 100%;
+}
+
+.About_us, .owner {
+	width: 80%;
+	margin: 0 0 0 8%; /* I wanted the text to be in the middle so I added 8% margin on the left */
+}
+
+html {
+	background-color: ivory;
+}
+
+header {
+	background-color:ivory;
+}
+
+h1 {
+	margin: 10px;
+	font-family: 'Fauna One', serif;
+}
+
+h2 {
+	text-decoration: underline;
+	font-family: 'Fauna One', serif;
+	color: black;
+}
+
+p {
+	border: 1px solid black;
+	font-weight: bold;
+	padding: 10px;
+	font-family: 'Fauna One', serif;
+}
+
+footer {
+	width: 100%;
+	clear: left; /* to avoid collision with floats */
+}
+
+address {
+	background-color:#20639b;
+	color: white;
+	font-style: normal; /* address tag makes the font italic so I had to change it */
+	font-variant: small-caps;
+	font-size: 1em;
+	line-height: 3em;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+	width: 100%;
+}
+
+
+li {
+	display: inline;
+}
+
+
+nav a {
+	border: none;
+	display: inline-block;
+	text-decoration: none;
+	width: 19.5%;
+	text-align: center;
+	line-height: 3; /* adjusting the size of the nav bar */
+	color: white;
+	font-family: 'Fauna One', serif;
+}
+
+
+a:link, a:visited, a:focus {
+	background-color: #20639b;
+}
+
+a:hover {
+	background: #00334d;
+	color: white;
+}
+
+a:active {
+	background: skyblue;
+	color: black;
+}
+
+.houseimage {
+	float: left;
+	margin-right: 10px;
+	clear: both;
+}
+
+/* created this class (ontheright) to make the p tag to be on the right side of the image */
+.ontheright{
+	margin: 20px;
+	padding: 36px;
+	overflow: auto; /* overflow prevents the p box to collide with the image */
+	font-family: 'Fauna One', serif;
+	font-size: 16px;
+}
+
+.container {
+	position: relative;
+	width:50%;
+	float:left;
+}
+
+
+.image {
+  opacity: 1;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  padding: 16px 32px;
+	font-family: 'Fauna One', serif;
+}
+
+
+
